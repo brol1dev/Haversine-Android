@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/earth_bg"
+    android:padding="10dp" >
+
+    <TextView android:id="@+id/title"
+        android:text="@string/title"
+        style="@style/title"/>
+    
+    <TableLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <TableRow style="@style/row">
+            <Space />
+            <TextView android:text="@string/lbl_lat"
+                style="@style/header.yellow"/>
+            <Space />
+            <TextView android:text="@string/lbl_lon"
+                style="@style/header.green"/>
+        </TableRow>
+        <TableRow style="@style/row">
+            <TextView android:text="@string/lbl_pt1"
+                style="@style/label"/>
+            <EditText android:id="@+id/txt_lat1" 
+                android:inputType="numberSigned|numberDecimal"
+                style="@style/txt_input"/>
+            <TextView android:text="@string/sym_deg"
+                style="@style/label"/>
+            <EditText android:id="@+id/txt_lon1" 
+                android:inputType="numberSigned|numberDecimal"
+                style="@style/txt_input"/>
+            <TextView android:text="@string/sym_deg"
+                style="@style/label"/>
+        </TableRow>
+        <TableRow style="@style/row">
+            <TextView android:text="@string/lbl_pt2"
+                style="@style/label"/>
+            <EditText android:id="@+id/txt_lat2"
+                android:inputType="numberSigned|numberDecimal" 
+                style="@style/txt_input"/>
+            <TextView android:text="@string/sym_deg"
+                style="@style/label"/>
+            <EditText android:id="@+id/txt_lon2"
+                android:inputType="numberSigned|numberDecimal" 
+                style="@style/txt_input"/>
+            <TextView android:text="@string/sym_deg"
+                style="@style/label"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button android:id="@+id/btn_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_dist"
+        style="@style/btn" />
+
+    <LinearLayout android:id="@+id/lay_result"
+        android:visibility="invisible" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+    	android:gravity="center_horizontal"
+    	>
+	    
+	    <TextView android:text="@string/lbl_dist"
+	        style="@style/label.big"/>
+	    
+	    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center_horizontal">
+            <TextView android:text="@string/lbl_mydist"
+                style="@style/label"/>
+		    <TextView android:id="@+id/txt_result"
+		            style="@style/label"/>
+	    </LinearLayout>
+	    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center_horizontal">
+            <TextView android:text="@string/lbl_sdkdist"
+                style="@style/label"/>
+		    <TextView android:id="@+id/txt_sdkres"
+		            style="@style/label"/>
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

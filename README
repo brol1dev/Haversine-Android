@@ -1,0 +1,12 @@
+Distance from two locations of the Earth
+
+This application computes the distance from two locations of the Earth, given in
+latitude and longitude, in kilometers.
+It uses the haversine formula to compute the distance from the two locations.
+It assumes that the Earth is a plain sphere.
+
+It works on Android 4.0.3 and newer versions.
+
+To use the applications just input the latitude and logitude from the two
+locations and then press the Get Distance button and the result will be shown in
+kilometers.

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Earth Distance</string>
+	<string name="title">Earth distance between two points</string>
+	
+	<string name="lbl_lat">Latitude</string>
+	<string name="lbl_lon">Longitude</string>
+	
+	<string name="lbl_pt1">Point 1:</string>
+	<string name="lbl_pt2">Point 2:</string>
+	<string name="sym_deg">º</string>
+	<string name="sym_km">km.</string>
+	
+	<string name="lbl_dist">Distance</string>
+	<string name="lbl_mydist">Haversine:</string>
+	<string name="lbl_sdkdist">SDK:</string>
+	<string name="btn_dist">Get Distance</string>
+</resources>
